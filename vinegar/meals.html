@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meals Menu – Vinegar Food Restaurant | JADONS Ltd</title>
+    <meta name="description"
+        content="Explore Vinegar Food Restaurant's full menu – Regular, Lunch, Snacks, Dessert, and Beverages from 72 rotating menus.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">🍽️</div>
+                <div class="logo-text">
+                    <span class="logo-name">Vinegar</span>
+                    <span class="logo-sub">Fine Dining · JADONS Ltd</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="has-dropdown">
+                    <a href="meals.html" class="active">Meals</a>
+                    <ul class="dropdown">
+                        <li><a href="#regular">Regular</a></li>
+                        <li><a href="#lunch">Lunch</a></li>
+                        <li><a href="#snacks">Snacks</a></li>
+                        <li><a href="#dessert">Dessert</a></li>
+                        <li><a href="#beverages">Beverages</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="catering.html">Catering</a></li>
+                <li><a href="recipe.html">Recipe</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="contact.html" class="nav-reserve">Reserve a Table</a>
+                <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-nav" id="mobileNav">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="about.html">👥 About Us</a></li>
+            <li><a href="meals.html">🍽️ Meals</a></li>
+            <li><a href="gallery.html">🖼️ Gallery</a></li>
+            <li><a href="awards.html">🏆 Awards</a></li>
+            <li><a href="catering.html">🤝 Catering</a></li>
+            <li><a href="recipe.html">📖 Recipe of the Month</a></li>
+            <li><a href="contact.html">📍 Contact Us</a></li>
+            <li><a href="feedback.html">💬 Feedback</a></li>
+            <li><a href="sitemap.html">🗺️ Sitemap</a></li>
+        </ul>
+    </div>
+
+    <div class="page-header">
+        <div class="container">
+            <span class="section-tag" style="background:rgba(212,175,55,0.15);color:var(--gold)">72 Rotating
+                Menus</span>
+            <h1>Our Menus</h1>
+            <div class="page-breadcrumb">
+                <a href="index.html">Home</a> <span>›</span> <span>Meals</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- QUICK NAVIGATION -->
+    <section style="padding:24px 0; background:var(--dark-2); position:sticky;top:72px;z-index:100">
+        <div class="container" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+            <a href="#regular" class="btn btn-outline" style="padding:8px 20px;font-size:0.85rem">🍗 Regular</a>
+            <a href="#lunch" class="btn btn-outline" style="padding:8px 20px;font-size:0.85rem">🥗 Lunch</a>
+            <a href="#snacks" class="btn btn-outline" style="padding:8px 20px;font-size:0.85rem">🥨 Snacks</a>
+            <a href="#dessert" class="btn btn-outline" style="padding:8px 20px;font-size:0.85rem">🍰 Dessert</a>
+            <a href="#beverages" class="btn btn-outline" style="padding:8px 20px;font-size:0.85rem">🍹 Beverages</a>
+        </div>
+    </section>
+
+    <!-- REGULAR -->
+    <section class="menu-section" id="regular">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag">Main Course</span>
+                <h2 class="section-title">🍗 Regular Meals</h2>
+                <p class="section-subtitle">Hearty, satisfying main course dishes crafted by our expert chefs</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="images/meals_regular.png" class="menu-card-img"
+                            alt="Grilled Chicken"><span class="menu-badge">Chef's Pick</span></div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Herb Grilled Chicken</h3>
+                        <p class="menu-card-desc">Juicy grilled chicken with roasted veggies, mash & brown gravy.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$14.99</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/baku bef.png" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Wagyu Beef Steak</h3>
+                        <p class="menu-card-desc">Premium Wagyu with herb butter, truffle fries & garden salad.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$38.99</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/saforan biryani.jfif" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Saffron Biryani Royale</h3>
+                        <p class="menu-card-desc">Aromatic basmati with slow-cooked lamb and golden saffron.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$18.50</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/ribs.jpg" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">BBQ Pork Ribs</h3>
+                        <p class="menu-card-desc">Slow-smoked ribs with BBQ glaze, coleslaw and cornbread.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$26.99</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/lobister.webp" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Lobster Thermidor</h3>
+                        <p class="menu-card-desc">Whole lobster baked with creamy brandy sauce and herbs.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$54.99</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/butter.jpg" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Butter Chicken Masala</h3>
+                        <p class="menu-card-desc">Tender chicken in rich tomato-cream masala with naan bread.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$16.99</span><span
+                                class="star-rating">★★★★☆</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LUNCH -->
+    <section class="menu-section" id="lunch" style="background:var(--cream)">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag">Midday Delights</span>
+                <h2 class="section-title">🥗 Lunch Specials</h2>
+                <p class="section-subtitle">Light yet fulfilling lunch options to fuel your afternoon</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/harvesal.jpg" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Garden Harvest Bowl</h3>
+                        <p class="menu-card-desc">Fresh greens, roasted chickpeas, avocado & citrus dressing.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$11.99</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/black pasta.jpg" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Black Truffle Pasta</h3>
+                        <p class="menu-card-desc">Al dente pasta with black truffle cream sauce & parmesan.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$22.99</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/box.webp" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Executive Lunch Box</h3>
+                        <p class="menu-card-desc">Curated 3-course set with soup, main & dessert.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$16.99</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/sandwich.jpg" alt="">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Club Sandwich Deluxe</h3>
+                        <p class="menu-card-desc">Triple-decker with turkey, bacon, avocado & sun-dried tomato.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$13.50</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/nodle.jpg" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Pho Noodle Soup</h3>
+                        <p class="menu-card-desc">Vietnamese-style pho with rich bone broth and fresh herbs.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$14.50</span><span
+                                class="star-rating">★★★★☆</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/piza.jpg!sw800" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Artisan Lunch Pizza</h3>
+                        <p class="menu-card-desc">Thin crust pizza with seasonal toppings and fresh mozzarella.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$12.99</span><span
+                                class="star-rating">★★★★☆</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SNACKS -->
+    <section class="menu-section" id="snacks">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag">Light Bites</span>
+                <h2 class="section-title">🥨 Snacks & Starters</h2>
+                <p class="section-subtitle">Perfect accompaniments – snacks, starters and light bites</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/roll.webp" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Crispy Spring Rolls</h3>
+                        <p class="menu-card-desc">Golden rolls stuffed with vegetables and vermicelli noodles.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$7.99</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/mashrom.webp" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Stuffed Mushrooms</h3>
+                        <p class="menu-card-desc">Portobello caps with cheese, spinach and sun-dried tomatoes.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$9.50</span><span
+                                class="star-rating">★★★★☆</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/slider.webp" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Mini Gourmet Sliders</h3>
+                        <p class="menu-card-desc">Mini burgers with truffle mayo, micro greens & pickles.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$12.99</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/chesse.avif" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Cheese Fondue Pot</h3>
+                        <p class="menu-card-desc">Rich melted gruyere and emmental with artisan bread dippers.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$14.50</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/egg.jpg" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Deviled Eggs Royale</h3>
+                        <p class="menu-card-desc">Classic deviled eggs garnished with caviar and smoked paprika.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$8.99</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/artisian.webp" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Artisan Cheese Board</h3>
+                        <p class="menu-card-desc">Curated selection of artisanal cheeses with honeycomb & crackers.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$16.99</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESSERT -->
+    <section class="menu-section" id="dessert" style="background:var(--cream-2)">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag">Sweet Endings</span>
+                <h2 class="section-title">🍰 Desserts</h2>
+                <p class="section-subtitle">Indulgent creations to end your meal on the sweetest note</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/lava.webp" class="menu-card-img"
+                            alt="Chocolate Lava Cake"><span class="menu-badge">Signature</span></div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Chocolate Lava Cake</h3>
+                        <p class="menu-card-desc">Warm molten chocolate cake with vanilla ice cream & berry coulis.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$8.99</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/stawbery.jpg" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Strawberry Cheesecake</h3>
+                        <p class="menu-card-desc">Creamy NY-style cheesecake on buttery graham cracker base.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$7.50</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/creme.jpg" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Crème Brûlée</h3>
+                        <p class="menu-card-desc">Classic French custard with caramelized sugar crust.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$9.99</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/ice cream.webp" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Artisan Ice Cream</h3>
+                        <p class="menu-card-desc">Three scoops of house-churned ice cream in seasonal flavors.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$6.50</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/macon box.webp" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">French Macaron Box</h3>
+                        <p class="menu-card-desc">Six delicate macarons in seasonal flavors by Chef Sofia.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$11.99</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/celebration.webp" alt="">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Celebration Cake</h3>
+                        <p class="menu-card-desc">Custom-designed cakes available 48 hours in advance order.</p>
+                        <div class="menu-card-footer"><span class="menu-price">From $34.99</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BEVERAGES -->
+    <section class="menu-section" id="beverages">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag">Drinks Menu</span>
+                <h2 class="section-title">🍹 Beverages</h2>
+                <p class="section-subtitle">From refreshing mocktails to artisan coffees and health-boosting coolers</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="images/beverages_drinks.png" class="menu-card-img"
+                            alt="Beverages"><span class="menu-badge">Refreshing</span></div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Tropical Mocktail</h3>
+                        <p class="menu-card-desc">Mango, passion fruit, lime & sparkling water – pure paradise.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$5.99</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/caremel cofe.jpg!w700wp" alt="">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Iced Caramel Coffee</h3>
+                        <p class="menu-card-desc">Cold brew with caramel drizzle, whipped cream swirls.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$4.99</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/green late.webp" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Matcha Green Latte</h3>
+                        <p class="menu-card-desc">Ceremonial grade matcha with oat milk & vanilla.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$5.50</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/orange.webp" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Fresh Orange Juice</h3>
+                        <p class="menu-card-desc">Hand-squeezed Valencia oranges, served chilled.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$4.50</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/breey blast.jpg" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Berry Blast Smoothie</h3>
+                        <p class="menu-card-desc">Mixed berries, banana, Greek yogurt & honey blend.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$6.50</span><span
+                                class="star-rating">★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="menu-card reveal">
+                    <div class="menu-card-img-wrap"><img src="./images/lemon mint.jfif" alt="menu-card-img">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-name">Sparkling Lemon Mint</h3>
+                        <p class="menu-card-desc">Refreshing sparkling water with fresh mint, lemon & basil.</p>
+                        <div class="menu-card-footer"><span class="menu-price">$3.99</span><span
+                                class="star-rating">★★★★☆</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2026 Vinegar Food Restaurant · JADONS Ltd. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="index.html">Home</a>
+                    <a href="sitemap.html">Sitemap</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Back to top">↑</button>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

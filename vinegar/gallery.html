@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery – Vinegar Food Restaurant | JADONS Ltd</title>
+    <meta name="description"
+        content="Explore the visual feast at Vinegar Food Restaurant – a gallery of our finest culinary creations and restaurant ambiance.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .gallery-full-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .gallery-full-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--radius);
+            cursor: pointer;
+            aspect-ratio: 4/3;
+        }
+
+        .gallery-full-item img,
+        .gallery-full-item .gallery-emoji {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .gallery-full-item .gallery-emoji {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4.5rem;
+            background: var(--dark-3);
+        }
+
+        .gallery-full-item:hover img,
+        .gallery-full-item:hover .gallery-emoji {
+            transform: scale(1.1);
+        }
+
+        .gallery-full-item .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(26, 18, 8, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .gallery-full-item .gallery-overlay span {
+            color: var(--white);
+            font-size: 1.8rem;
+            opacity: 0;
+            transform: scale(0.5);
+            transition: var(--transition);
+        }
+
+        .gallery-full-item:hover .gallery-overlay {
+            background: rgba(200, 64, 26, 0.5);
+        }
+
+        .gallery-full-item:hover .gallery-overlay span {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(26, 18, 8, 0.9), transparent);
+            color: var(--white);
+            padding: 20px 16px 14px;
+            transform: translateY(100%);
+            transition: var(--transition);
+            font-size: 0.88rem;
+            font-weight: 500;
+        }
+
+        .gallery-full-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+
+        @media(max-width:768px) {
+            .gallery-full-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media(max-width:480px) {
+            .gallery-full-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">🍽️</div>
+                <div class="logo-text">
+                    <span class="logo-name">Vinegar</span>
+                    <span class="logo-sub">Fine Dining · JADONS Ltd</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="has-dropdown">
+                    <a href="meals.html">Meals</a>
+                    <ul class="dropdown">
+                        <li><a href="meals.html#regular">Regular</a></li>
+                        <li><a href="meals.html#lunch">Lunch</a></li>
+                        <li><a href="meals.html#snacks">Snacks</a></li>
+                        <li><a href="meals.html#dessert">Dessert</a></li>
+                        <li><a href="meals.html#beverages">Beverages</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="catering.html">Catering</a></li>
+                <li><a href="recipe.html">Recipe</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="contact.html" class="nav-reserve">Reserve a Table</a>
+                <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-nav" id="mobileNav">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="about.html">👥 About Us</a></li>
+            <li><a href="meals.html">🍽️ Meals</a></li>
+            <li><a href="gallery.html">🖼️ Gallery</a></li>
+            <li><a href="awards.html">🏆 Awards</a></li>
+            <li><a href="catering.html">🤝 Catering</a></li>
+            <li><a href="recipe.html">📖 Recipe of the Month</a></li>
+            <li><a href="contact.html">📍 Contact Us</a></li>
+            <li><a href="feedback.html">💬 Feedback</a></li>
+            <li><a href="sitemap.html">🗺️ Sitemap</a></li>
+        </ul>
+    </div>
+
+    <div class="page-header">
+        <div class="container">
+            <span class="section-tag" style="background:rgba(212,175,55,0.15);color:var(--gold)">Visual Journey</span>
+            <h1>Our Gallery</h1>
+            <div class="page-breadcrumb">
+                <a href="index.html">Home</a> <span>›</span> <span>Gallery</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="gallery-section" style="padding:80px 0">
+        <div class="container">
+            <div class="text-center" style="margin-bottom:48px">
+                <h2 class="section-title">A Feast for the Eyes</h2>
+                <p class="section-subtitle">Hover over any image to discover more. Click to enlarge.</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="menu-tabs" style="margin-bottom:40px">
+                <button class="menu-tab active" onclick="filterGallery('all',this)">All</button>
+                <button class="menu-tab" onclick="filterGallery('food',this)">Food</button>
+                <button class="menu-tab" onclick="filterGallery('drinks',this)">Drinks</button>
+                <button class="menu-tab" onclick="filterGallery('ambiance',this)">Ambiance</button>
+                <button class="menu-tab" onclick="filterGallery('desserts',this)">Desserts</button>
+            </div>
+
+            <div class="gallery-full-grid">
+                <div class="gallery-full-item" data-cat="food">
+                    <img src="images/hero_food_spread.png" alt="Gourmet Spread">
+                    <div class="gallery-overlay"><span>🔍</span></div>
+                    <div class="gallery-caption">Signature Gourmet Food Spread</div>
+                </div>
+                <div class="gallery-full-item" data-cat="ambiance">
+                    <img src="images/restaurant_interior.png" alt="Restaurant Interior">
+                    <div class="gallery-overlay"><span>🔍</span></div>
+                    <div class="gallery-caption">Vinegar Fine Dining Ambiance</div>
+                </div>
+                <div class="gallery-full-item" data-cat="food">
+                    <img src="images/meals_regular.png" alt="Grilled Chicken">
+                    <div class="gallery-overlay"><span>🔍</span></div>
+                    <div class="gallery-caption">Herb Grilled Chicken Plate</div>
+                </div>
+                <div class="gallery-full-item" data-cat="desserts">
+                    <img src="images/meals_dessert.png" alt="Desserts">
+                    <div class="gallery-overlay"><span>🔍</span></div>
+                    <div class="gallery-caption">Premium Dessert Collection</div>
+                </div>
+                <div class="gallery-full-item" data-cat="food">
+                    <img src="images/gallery_food1.png" alt="Sushi">
+                    <div class="gallery-overlay"><span>🔍</span></div>
+                    <div class="gallery-caption">Artisan Sushi Platter</div>
+                </div>
+                <div class="gallery-full-item" data-cat="drinks">
+                    <img src="images/beverages_drinks.png" alt="Beverages">
+                    <div class="gallery-overlay"><span>🔍</span></div>
+                    <div class="gallery-caption">Signature Beverage Collection</div>
+                </div>
+                <div class="gallery-full-item" data-cat="food">
+                    <img src="./images/baku beef.png" alt="food">
+                    <div class="gallery-overlay"><span>🔍</span></div>
+                    <div class="gallery-caption">Wagyu Beef Steak</div>
+                </div>
+                <div class="gallery-full-item" data-cat="food">
+                    <img src="./images/black pasta.jpg" alt="food">
+                    <div class="gallery-overlay"><span>🔍</span></div>
+                    <div class="gallery-caption">Black Truffle Pasta</div>
+                </div>
+                <div class="gallery-full-item" data-cat="desserts">
+                    <img src="./images/stawbery.jpg" alt="">
+                    <div class="gallery-overlay"><span>🔍</span></div>
+                    <div class="gallery-caption">Strawberry Cheesecake</div>
+                </div>
+                <div class="gallery-full-item" data-cat="drinks">
+                    <img src="./images/caremel coffe.jpg!w700wp" alt="drink">
+                    <div class="gallery-overlay"><span>🔍</span></div>
+                    <div class="gallery-caption">Iced Caramel Latte</div>
+                </div>
+                <div class="gallery-full-item" data-cat="food">
+                    <img src="./images/saforan biryani.jfif" alt="food">
+                    <div class="gallery-overlay"><span>🔍</span></div>
+                    <div class="gallery-caption">Saffron Biryani Royale</div>
+                </div>
+                <div class="gallery-full-item" data-cat="ambiance">
+                    <img src="./images/celebration.webp" alt="ambiance">
+                    <div class="gallery-overlay"><span>🔍</span></div>
+                    <div class="gallery-caption">Candlelit Dining Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2026 Vinegar Food Restaurant · JADONS Ltd. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="index.html">Home</a>
+                    <a href="sitemap.html">Sitemap</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Back to top">↑</button>
+    <script src="js/main.js"></script>
+    <script>
+        function filterGallery(cat, btn) {
+            document.querySelectorAll('.menu-tab').forEach(t => t.classList.remove('active'));
+            btn.classList.add('active');
+            document.querySelectorAll('.gallery-full-item').forEach(item => {
+                if (cat === 'all' || item.dataset.cat === cat) {
+                    item.style.display = '';
+                    item.style.animation = 'fadeIn 0.4s ease';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

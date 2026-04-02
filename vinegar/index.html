@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinegar Food Restaurant – Premium Dining by JADONS Ltd</title>
+  <meta name="description" content="Vinegar Food Restaurant – JADONS Ltd's flagship brand with 1000+ branches, 72 rotating menus, and 240,000+ delicacies. Experience culinary excellence.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">🍽️</div>
+        <div class="logo-text">
+          <span class="logo-name">Vinegar</span>
+          <span class="logo-sub">Fine Dining · JADONS Ltd</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="has-dropdown">
+          <a href="meals.html">Meals</a>
+          <ul class="dropdown">
+            <li><a href="meals.html#regular">Regular</a></li>
+            <li><a href="meals.html#lunch">Lunch</a></li>
+            <li><a href="meals.html#snacks">Snacks</a></li>
+            <li><a href="meals.html#dessert">Dessert</a></li>
+            <li><a href="meals.html#beverages">Beverages</a></li>
+          </ul>
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="awards.html">Awards</a></li>
+        <li><a href="catering.html">Catering</a></li>
+        <li><a href="recipe.html">Recipe</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="contact.html" class="nav-reserve">Reserve a Table</a>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="about.html">👥 About Us</a></li>
+      <li><a href="meals.html">🍽️ Meals</a></li>
+      <div class="mobile-submenu">
+        <ul class="mobile-nav-links">
+          <li><a href="meals.html#regular">Regular</a></li>
+          <li><a href="meals.html#lunch">Lunch</a></li>
+          <li><a href="meals.html#snacks">Snacks</a></li>
+          <li><a href="meals.html#dessert">Dessert</a></li>
+          <li><a href="meals.html#beverages">Beverages</a></li>
+        </ul>
+      </div>
+      <li><a href="gallery.html">🖼️ Gallery</a></li>
+      <li><a href="awards.html">🏆 Awards</a></li>
+      <li><a href="catering.html">🤝 Catering</a></li>
+      <li><a href="recipe.html">📖 Recipe of the Month</a></li>
+      <li><a href="contact.html">📍 Contact Us</a></li>
+      <li><a href="feedback.html">💬 Feedback</a></li>
+      <li><a href="sitemap.html">🗺️ Sitemap</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO SLIDER -->
+  <section class="hero" id="home">
+    <div class="hero-slider">
+      <div class="slide active">
+        <img src="images/hero_food_spread.png" alt="Gourmet Food Spread">
+        <div class="slide-overlay"></div>
+      </div>
+      <div class="slide">
+        <img src="images/restaurant_interior.png" alt="Vinegar Restaurant Interior">
+        <div class="slide-overlay"></div>
+      </div>
+      <div class="slide">
+        <img src="images/meals_regular.png" alt="Signature Dishes">
+        <div class="slide-overlay"></div>
+      </div>
+    </div>
+
+    <button class="slider-arrow slider-prev" id="sliderPrev">&#8592;</button>
+    <button class="slider-arrow slider-next" id="sliderNext">&#8594;</button>
+
+    <div class="hero-content">
+      <div class="hero-inner">
+        <span class="hero-eyebrow">Welcome to Vinegar</span>
+        <h1 class="hero-title">
+          Where Every Dish<br>Tells a <span>Delicious</span> Story
+        </h1>
+        <p class="hero-desc">
+          Spreading aroma online – JADONS Ltd's flagship restaurant with over 72 rotating menus 
+          and 240,000 delicacies served with passion across 1,000+ branches nationwide.
+        </p>
+        <div class="hero-cta">
+          <a href="meals.html" class="btn btn-primary">🍽️ Explore Menus</a>
+          <a href="contact.html" class="btn btn-outline">📍 Find a Branch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number counter" data-target="1000" data-suffix="+">0</span>
+            <span class="stat-label">Branches</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number counter" data-target="72" data-suffix="">0</span>
+            <span class="stat-label">Rotating Menus</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number counter" data-target="240000" data-suffix="+">0</span>
+            <span class="stat-label">Delicacies</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number counter" data-target="30" data-suffix="+">0</span>
+            <span class="stat-label">Years of Aroma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-controls">
+      <button class="slider-dot active"></button>
+      <button class="slider-dot"></button>
+      <button class="slider-dot"></button>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker-bar">
+    <div class="ticker-content">
+      🍽️ 72 Rotating Menus Updated Weekly
+      <span>✦</span>
+      Now Open: 1000+ Branches Nationwide
+      <span>✦</span>
+      📅 Catering for Weddings, Corporate Events & More
+      <span>✦</span>
+      🏆 Award-Winning Dining Since 1994
+      <span>✦</span>
+      🌿 Fresh Ingredients Sourced Daily
+      <span>✦</span>
+      ⭐ Recipe of the Month: Signature Saffron Biryani
+      <span>✦</span>
+      📞 Reservations: +1 (800) VINEGAR
+      <span>✦</span>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <span class="feature-icon">🌿</span>
+          <h3 class="feature-title">Fresh Ingredients</h3>
+          <p class="feature-desc">Farm-to-table freshness with daily sourced organic ingredients from trusted farms.</p>
+        </div>
+        <div class="feature-card reveal">
+          <span class="feature-icon">👨‍🍳</span>
+          <h3 class="feature-title">Expert Chefs</h3>
+          <p class="feature-desc">World-class culinary artists with decades of experience crafting unforgettable meals.</p>
+        </div>
+        <div class="feature-card reveal">
+          <span class="feature-icon">🔄</span>
+          <h3 class="feature-title">72 Rotating Menus</h3>
+          <p class="feature-desc">Our menus rotate dynamically to bring you seasonal specialties and global flavors.</p>
+        </div>
+        <div class="feature-card reveal">
+          <span class="feature-icon">🚚</span>
+          <h3 class="feature-title">Swift Delivery</h3>
+          <p class="feature-desc">Hot, fresh meals delivered to your door from any of our 1000+ locations.</p>
+        </div>
+        <div class="feature-card reveal">
+          <span class="feature-icon">🎂</span>
+          <h3 class="feature-title">Event Catering</h3>
+          <p class="feature-desc">Full-service catering for weddings, corporates, and all special occasions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-home" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal-left">
+          <img src="images/restaurant_interior.png" alt="Vinegar Restaurant Ambiance" class="about-img-main">
+          <div class="about-badge">
+            <span class="badge-number">30+</span>
+            <span class="badge-text">Years of<br>Excellence</span>
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <span class="section-tag">About Vinegar</span>
+          <h2 class="section-title">"The Serving Plates" – <em>A Legacy of Flavor</em></h2>
+          <p class="section-subtitle text-left" style="text-align:left;">
+            Vinegar Food Restaurant, the flagship brand of JADONS Ltd, has spread its aroma across 
+            the culinary world for decades. Known as <em>"the Serving plates,"</em> we have grown from 
+            a single kitchen to one of the most celebrated restaurant chains in the country.
+          </p>
+          <ul class="about-features-list">
+            <li>
+              <span class="list-icon">🏆</span>
+              Multiple national and international culinary awards
+            </li>
+            <li>
+              <span class="list-icon">🗺️</span>
+              1,000+ branches spread across the nation
+            </li>
+            <li>
+              <span class="list-icon">🍜</span>
+              240,000+ unique delicacies on our exclusive database
+            </li>
+            <li>
+              <span class="list-icon">🤝</span>
+              Corporate & private catering with bespoke menus
+            </li>
+          </ul>
+          <a href="about.html" class="btn btn-primary">Learn Our Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROTATING MENU SECTION -->
+  <section class="rotating-menu">
+    <div class="container">
+      <span class="section-tag" style="background:rgba(212,175,55,0.15);color:var(--gold)">72 Rotating Menus</span>
+      <h2 class="section-title">Today We're Serving</h2>
+      <div class="rotating-text-wrapper">
+        <span class="rotating-text-item">Saffron Biryani Royale</span>
+        <span class="rotating-text-item">Lobster Thermidor</span>
+        <span class="rotating-text-item">Black Truffle Pasta</span>
+        <span class="rotating-text-item">Wagyu Beef Steak</span>
+        <span class="rotating-text-item">Zesty Mango Tart</span>
+      </div>
+      <p style="color:rgba(255,255,255,0.6); font-size:0.95rem; max-width:480px; margin:0 auto 32px;">
+        Our menus rotate dynamically bringing you a fresh culinary experience every single visit.
+      </p>
+      <a href="meals.html" class="btn btn-gold">View All Menus</a>
+
+      <div class="rotating-menu-stats">
+        <div class="rm-stat">
+          <span class="rm-stat-num">72</span>
+          <span class="rm-stat-label">Rotating Menus</span>
+        </div>
+        <div class="rm-stat">
+          <span class="rm-stat-num">240K+</span>
+          <span class="rm-stat-label">Delicacies</span>
+        </div>
+        <div class="rm-stat">
+          <span class="rm-stat-num">1000+</span>
+          <span class="rm-stat-label">Branches</span>
+        </div>
+        <div class="rm-stat">
+          <span class="rm-stat-num">5★</span>
+          <span class="rm-stat-label">Rating</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU PREVIEW -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Our Menus</span>
+        <h2 class="section-title">Taste the Difference</h2>
+        <p class="section-subtitle">From hearty regular meals to indulgent desserts – something for every palate</p>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-panel="tab-regular">🍗 Regular</button>
+        <button class="menu-tab" data-panel="tab-lunch">🥗 Lunch</button>
+        <button class="menu-tab" data-panel="tab-snacks">🥨 Snacks</button>
+        <button class="menu-tab" data-panel="tab-dessert">🍰 Dessert</button>
+        <button class="menu-tab" data-panel="tab-beverages">🍹 Beverages</button>
+      </div>
+
+      <div class="menu-panels">
+        <!-- Regular -->
+        <div class="menu-panel active" id="tab-regular">
+          <div class="menu-grid">
+            <div class="menu-card">
+              <div class="menu-card-img-wrap">
+                <img src="images/meals_regular.png" alt="Grilled Chicken" class="menu-card-img">
+                <span class="menu-badge">Chef's Pick</span>
+              </div>
+              <div class="menu-card-body">
+                <h3 class="menu-card-name">Herb Grilled Chicken</h3>
+                <p class="menu-card-desc">Juicy grilled chicken with roasted veggies, mash & brown gravy.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$14.99</span>
+                  <span class="star-rating">★★★★★</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img-wrap"><img src="./images/baku beef.png" alt="">
+              </div>
+              <div class="menu-card-body">
+                <h3 class="menu-card-name">Wagyu Beef Steak</h3>
+                <p class="menu-card-desc">Premium Wagyu beef steak with herb butter, fries & salad.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$38.99</span>
+                  <span class="star-rating">★★★★★</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img-wrap"><img src="./images/saforan biryani.jfif" alt="">
+              </div>
+              <div class="menu-card-body">
+                <h3 class="menu-card-name">Saffron Biryani Royale</h3>
+                <p class="menu-card-desc">Aromatic basmati rice with slow-cooked lamb and golden saffron.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$18.50</span>
+                  <span class="star-rating">★★★★☆</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lunch -->
+        <div class="menu-panel" id="tab-lunch">
+          <div class="menu-grid">
+            <div class="menu-card">
+              <div class="menu-card-img-wrap">
+                <div class="food-emoji-card">🥗</div>
+              </div>
+              <div class="menu-card-body">
+                <h3 class="menu-card-name">Garden Harvest Bowl</h3>
+                <p class="menu-card-desc">Fresh greens, roasted chickpeas, avocado & citrus dressing.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$11.99</span>
+                  <span class="star-rating">★★★★★</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img-wrap">
+                <div class="food-emoji-card">🍝</div>
+              </div>
+              <div class="menu-card-body">
+                <h3 class="menu-card-name">Black Truffle Pasta</h3>
+                <p class="menu-card-desc">Al dente pasta tossed in black truffle cream sauce with parmesan.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$22.99</span>
+                  <span class="star-rating">★★★★★</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img-wrap">
+                <div class="food-emoji-card">🍱</div>
+                <span class="menu-badge">Bestseller</span>
+              </div>
+              <div class="menu-card-body">
+                <h3 class="menu-card-name">Executive Lunch Box</h3>
+                <p class="menu-card-desc">Curated 3-course lunch set with soup, main & dessert.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$16.99</span>
+                  <span class="star-rating">★★★★★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snacks -->
+        <div class="menu-panel" id="tab-snacks">
+          <div class="menu-grid">
+            <div class="menu-card">
+              <div class="menu-card-img-wrap">
+                <div class="food-emoji-card">🥟</div>
+                <span class="menu-badge">Popular</span>
+              </div>
+              <div class="menu-card-body">
+                <h3 class="menu-card-name">Crispy Spring Rolls</h3>
+                <p class="menu-card-desc">Crunchy golden rolls stuffed with vegetables and vermicelli.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$7.99</span>
+                  <span class="star-rating">★★★★★</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img-wrap">
+                <div class="food-emoji-card">🧆</div>
+              </div>
+              <div class="menu-card-body">
+                <h3 class="menu-card-name">Stuffed Mushrooms</h3>
+                <p class="menu-card-desc">Portobello caps filled with cheese, spinach and sun-dried tomatoes.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$9.50</span>
+                  <span class="star-rating">★★★★☆</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img-wrap">
+                <div class="food-emoji-card">🍔</div>
+              </div>
+              <div class="menu-card-body">
+                <h3 class="menu-card-name">Mini Gourmet Sliders</h3>
+                <p class="menu-card-desc">Trio of mini burgers with premium patties, truffle mayo & pickles.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$12.99</span>
+                  <span class="star-rating">★★★★★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dessert -->
+        <div class="menu-panel" id="tab-dessert">
+          <div class="menu-grid">
+            <div class="menu-card">
+              <div class="menu-card-img-wrap">
+                <img src="images/meals_dessert.png" alt="Chocolate Lava Cake" class="menu-card-img">
+                <span class="menu-badge">Signature</span>
+              </div>
+              <div class="menu-card-body">
+                <h3 class="menu-card-name">Chocolate Lava Cake</h3>
+                <p class="menu-card-desc">Warm chocolate cake with molten centre, served with vanilla ice cream.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$8.99</span>
+                  <span class="star-rating">★★★★★</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img-wrap">
+                <div class="food-emoji-card">🍰</div>
+              </div>
+              <div class="menu-card-body">
+                <h3 class="menu-card-name">Strawberry Cheesecake</h3>
+                <p class="menu-card-desc">Creamy NY-style cheesecake on buttery graham cracker base.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$7.50</span>
+                  <span class="star-rating">★★★★★</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img-wrap">
+                <div class="food-emoji-card">🍮</div>
+              </div>
+              <div class="menu-card-body">
+                <h3 class="menu-card-name">Crème Brûlée</h3>
+                <p class="menu-card-desc">Classic French custard with a perfectly caramelized sugar crust.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$9.99</span>
+                  <span class="star-rating">★★★★★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beverages -->
+        <div class="menu-panel" id="tab-beverages">
+          <div class="menu-grid">
+            <div class="menu-card">
+              <div class="menu-card-img-wrap">
+                <img src="images/beverages_drinks.png" alt="Beverages" class="menu-card-img">
+                <span class="menu-badge">Refreshing</span>
+              </div>
+              <div class="menu-card-body">
+                <h3 class="menu-card-name">Tropical Mocktail</h3>
+                <p class="menu-card-desc">A vibrant blend of mango, passion fruit, lime & sparkling water.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$5.99</span>
+                  <span class="star-rating">★★★★★</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img-wrap">
+                <div class="food-emoji-card">☕</div>
+              </div>
+              <div class="menu-card-body">
+                <h3 class="menu-card-name">Iced Caramel Coffee</h3>
+                <p class="menu-card-desc">Cold brew coffee with caramel drizzle and fresh cream swirls.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$4.99</span>
+                  <span class="star-rating">★★★★★</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img-wrap">
+                <div class="food-emoji-card">🍵</div>
+              </div>
+              <div class="menu-card-body">
+                <h3 class="menu-card-name">Matcha Green Latte</h3>
+                <p class="menu-card-desc">Ceremonial grade matcha with oat milk and a hint of vanilla.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$5.50</span>
+                  <span class="star-rating">★★★★★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:48px">
+        <a href="meals.html" class="btn btn-primary">View Full Menu →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY PREVIEW -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag" style="background:rgba(212,175,55,0.15);color:var(--gold)">Gallery</span>
+        <h2 class="section-title">A Feast for the Eyes</h2>
+        <p class="section-subtitle">A visual journey through our culinary masterpieces</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/hero_food_spread.png" alt="Gourmet Spread">
+          <div class="gallery-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/meals_regular.png" alt="Regular Meal">
+          <div class="gallery-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/meals_dessert.png" alt="Desserts">
+          <div class="gallery-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/beverages_drinks.png" alt="Beverages">
+          <div class="gallery-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/gallery_food1.png" alt="Sushi">
+          <div class="gallery-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/restaurant_interior.png" alt="Restaurant Interior">
+          <div class="gallery-overlay"><span>🔍</span></div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:48px">
+        <a href="gallery.html" class="btn btn-gold">View Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS PREVIEW -->
+  <section class="awards-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Award-Winning Excellence</h2>
+        <p class="section-subtitle">Decades of dedication recognized by culinary authorities worldwide</p>
+      </div>
+      <div class="awards-grid">
+        <div class="award-card reveal">
+          <span class="award-icon">🏆</span>
+          <span class="award-year">2024</span>
+          <h3 class="award-title">Best Restaurant Chain</h3>
+          <p class="award-desc">National Culinary Excellence Awards – Best Nationwide Restaurant Chain</p>
+        </div>
+        <div class="award-card reveal">
+          <span class="award-icon">⭐</span>
+          <span class="award-year">2023</span>
+          <h3 class="award-title">5-Star Dining Excellence</h3>
+          <p class="award-desc">International Food & Dining Awards – Five-Star Dining Experience Certificate</p>
+        </div>
+        <div class="award-card reveal">
+          <span class="award-icon">🌍</span>
+          <span class="award-year">2022</span>
+          <h3 class="award-title">Global Culinary Brand</h3>
+          <p class="award-desc">World Restaurant Awards – Outstanding Global Culinary Brand</p>
+        </div>
+        <div class="award-card reveal">
+          <span class="award-icon">🎖️</span>
+          <span class="award-year">2021</span>
+          <h3 class="award-title">Innovation in Dining</h3>
+          <p class="award-desc">Food Industry Innovation Award – Rotating Menu Concept Recognition</p>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="awards.html" class="btn btn-primary">See All Awards</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATERING PREVIEW -->
+  <section class="catering-section" id="catering">
+    <div class="container">
+      <div class="catering-content">
+        <div class="reveal-left">
+          <div class="catering-emoji-img">🤝</div>
+        </div>
+        <div class="reveal-right">
+          <span class="section-tag">Catering Services</span>
+          <h2 class="section-title">We Bring the Feast to You</h2>
+          <p class="section-subtitle" style="text-align:left; margin:0 0 8px;">
+            From intimate gatherings to grand corporate events, our professional catering team 
+            delivers the Vinegar experience wherever you need it.
+          </p>
+          <div class="catering-features">
+            <div class="catering-feature">
+              <div class="cf-icon">💍</div>
+              <div class="cf-title">Wedding Catering</div>
+              <div class="cf-desc">Luxurious menus for your special day</div>
+            </div>
+            <div class="catering-feature">
+              <div class="cf-icon">🏢</div>
+              <div class="cf-title">Corporate Events</div>
+              <div class="cf-desc">Professional catering for all business events</div>
+            </div>
+            <div class="catering-feature">
+              <div class="cf-icon">🎉</div>
+              <div class="cf-title">Private Parties</div>
+              <div class="cf-desc">Customized menus for your celebrations</div>
+            </div>
+            <div class="catering-feature">
+              <div class="cf-icon">🍱</div>
+              <div class="cf-title">Box Meals</div>
+              <div class="cf-desc">Bulk meal boxes for offices and schools</div>
+            </div>
+          </div>
+          <a href="catering.html" class="btn btn-primary">Learn More About Catering</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECIPE OF THE MONTH -->
+  <section class="recipe-section" id="recipe">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:48px">
+        <span class="section-tag" style="background:rgba(212,175,55,0.15);color:var(--gold)">Monthly Feature</span>
+        <h2 class="section-title" style="color:var(--white)">Recipe of the Month</h2>
+      </div>
+      <div class="recipe-card reveal">
+        <div class="recipe-image">
+          <img src="images/meals_regular.png" alt="Saffron Biryani" class="recipe-img">
+          <span class="recipe-month-badge">February 2026</span>
+        </div>
+        <div class="recipe-content">
+          <span class="section-tag">Featured Recipe</span>
+          <h2 class="recipe-title">Signature Saffron Biryani Royale</h2>
+          <p class="recipe-desc">
+            Our most beloved dish – fragrant basmati rice layered with slow-cooked lamb, 
+            infused with precious saffron threads and 23 hand-ground spices. 
+            A recipe passed down through generations of our master chefs.
+          </p>
+          <div class="recipe-meta">
+            <div class="recipe-meta-item">
+              <span>⏱️</span> <span>90 min prep</span>
+            </div>
+            <div class="recipe-meta-item">
+              <span>👨‍🍳</span> <span>Chef Raj Kumar</span>
+            </div>
+            <div class="recipe-meta-item">
+              <span>🌶️</span> <span>Medium spice</span>
+            </div>
+            <div class="recipe-meta-item">
+              <span>🍽️</span> <span>Serves 6</span>
+            </div>
+          </div>
+          <a href="recipe.html" class="btn btn-gold">Get Full Recipe</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT PREVIEW -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:64px">
+        <span class="section-tag">Reach Us</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Visit us, call us, or drop us a message — we're always happy to serve.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info-card reveal-left">
+          <h3>Let's Connect</h3>
+          <p>We'd love to hear from you. Whether you're planning a visit or want to enquire about catering, reach out anytime.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="ci-icon">📍</div>
+              <div>
+                <div class="ci-label">Headquarters</div>
+                <div class="ci-value">JADONS Centre, 42 Culinary Avenue<br>New York, NY 10001</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">📞</div>
+              <div>
+                <div class="ci-label">Phone</div>
+                <div class="ci-value">+1 (800) VINEGAR<br>+1 (800) 846-3427</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">✉️</div>
+              <div>
+                <div class="ci-label">Email</div>
+                <div class="ci-value">hello@vinegar.com<br>catering@vinegar.com</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">🕐</div>
+              <div>
+                <div class="ci-label">Hours</div>
+                <div class="ci-value">Mon–Sun: 7:00 AM – 11:00 PM<br>Kitchen closes at 10:30 PM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <h3>Send a Message</h3>
+          <p>Fill out the form and we'll respond within 24 hours.</p>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cName">Full Name</label>
+                <input type="text" id="cName" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="cEmail">Email Address</label>
+                <input type="email" id="cEmail" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cSubject">Subject</label>
+              <select id="cSubject">
+                <option>General Inquiry</option>
+                <option>Table Reservation</option>
+                <option>Catering Services</option>
+                <option>Feedback</option>
+                <option>Complaint</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cMessage">Message</label>
+              <textarea id="cMessage" placeholder="How can we help you?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center">
+              Send Message →
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="logo-icon">🍽️</div>
+            <div class="logo-text">
+              <span class="logo-name">Vinegar</span>
+              <span class="logo-sub">Fine Dining · JADONS Ltd</span>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            Spreading aroma online since 1994. Over 1,000 branches, 72 rotating menus, 
+            and 240,000+ delicacies — all crafted with love.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" title="Facebook">📘</a>
+            <a href="#" class="social-link" title="Instagram">📸</a>
+            <a href="#" class="social-link" title="Twitter">🐦</a>
+            <a href="#" class="social-link" title="YouTube">▶️</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-heading">Navigate</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="awards.html">Awards</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Dining</p>
+          <ul class="footer-links">
+            <li><a href="meals.html#regular">Regular Meals</a></li>
+            <li><a href="meals.html#lunch">Lunch</a></li>
+            <li><a href="meals.html#snacks">Snacks</a></li>
+            <li><a href="meals.html#dessert">Dessert</a></li>
+            <li><a href="meals.html#beverages">Beverages</a></li>
+            <li><a href="catering.html">Catering</a></li>
+            <li><a href="recipe.html">Recipe of the Month</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <p class="footer-heading">Newsletter</p>
+          <p>Subscribe for exclusive offers, new menu announcements and culinary inspiration.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email">
+            <button type="button">→</button>
+          </div>
+          <ul class="footer-links" style="margin-top:24px">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Vinegar Food Restaurant · JADONS Ltd. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" title="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+zz
